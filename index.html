@@ -3,17 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="block-header">
+    <header class="main-header">
       <div class="container">
-        <nav class="main-nav">
-          <div class="main-nav__logo">
+        <div class="main-logo">
             <a href="#">
               <img src="img/nerds-logo1.jpg" width="138" height="55" alt="">
             </a>
-          </div>
+        </div>
+        <nav class="main-nav clearfix">
           <ul class="main-nav-menu">
             <li class="main-nav-menu__item">
               <a href="#">Студия</a>
@@ -27,10 +28,11 @@
             <li class="main-nav-menu__item">
               <a href="#">Контакты</a>
             </li>
+            <li class="main-nav-menu__item shopping-cart">
+              <a href="#">Корзина</a>
+            </li>
           </ul>
-          <ul class="user-block">
-            <a href="#">Корзина</a>
-          </ul>
+
         </nav>
         <div class="slider">
           <div class="slider-wrapper">
@@ -80,7 +82,7 @@
           <a href="#" class="btn features-item__btn">Заказать</a>
         </article>
         </div>
-        <div class="about-us">
+        <div class="about-us clearfix">
           <div class="content-left">
             <p class="block-header">Мы - маленькая, но гордая дизайн-студия из краснодара</p>
             <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы</p>
@@ -100,26 +102,26 @@
               <li class="about-us-list__item">По предоплате 50%</li>
             </ul>
           </div>
-          <div class="our-works">
-            <section>
+        </div>
+        <div class="our-works clearfix">
+            <section class="our-works__item">
               <img src="img/portfolio-1.jpg" width="198" height="37" alt="">
             </section>
-            <section>
+            <section class="our-works__item">
               <img src="img/portfolio-2.jpg" width="199" height="68" alt="">
             </section>
-            <section>
+            <section class="our-works__item">
               <img src="img/portfolio-3.jpg" width="209" height="86" alt="">
             </section>
           </div>
-        </div>
     </main>
     <div class="google-map-container"></div>
     <footer>
-      <div class="container">
+      <div class="container clearfix">
         <section class="social-buttons">
-          <a href="#" class="social-btn btn-vk"></a>
-          <a href="#" class="social-btn btn-fb"></a>
-          <a href="#" class="social-btn btn-inst"></a>
+          <a href="#" class="social-btn btn-vk">1</a>
+          <a href="#" class="social-btn btn-fb">2</a>
+          <a href="#" class="social-btn btn-inst">3</a>
         </section>
         <section class="footer-text">
           <b class="block-header">Давайте дружно, это выгодно!</b>

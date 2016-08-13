@@ -1,11 +1,19 @@
+*{
+  outline: 1px solid #333;
+}
 body{
-  font-size: 15px;
+
   line-height: 22px;
   font-weight: normal;
   color: #9b9fa1;
   font-family: Roboto;
 }
 
+.clearfix::after{
+  display: table;
+  content: ' ';
+  clear: both;
+}
 
 h1{
   font-size: 36px;
@@ -21,4 +29,158 @@ h2{
   font-weight: normal;
   color: #000;
   font-family: Roboto;
+}
+
+
+.container{
+
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-header {
+  margin-bottom: 80px;
+}
+.main-nav{
+  height: 135px;
+
+}
+.main-logo{
+  float: left;
+}
+.main-nav-menu {
+  float: right;
+}
+
+.main-nav-menu__item {
+  display: inline-block;
+}
+
+/* Сетка для основного содержимого*/
+.features{
+  height: 380px;
+}
+.features-item {
+  float: left;
+  width: 240px;
+  margin-right: 80px;
+
+}
+.features-item:last-child{
+  margin-right: 0;
+}
+.about-us{
+  background: yellow;
+  margin-bottom: 70px;
+}
+
+.content-left {
+  float:left;
+  width: 560px;
+  padding-right: 70px;
+}
+.content-right {
+  float:right;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 250px;
+}
+.our-works {
+  height: 180px;
+  margin-bottom: 76px;
+}
+.our-works__item {
+  float: left;
+  height: 100%;
+  width: 220px;
+  margin-right: 100px;
+}
+
+.our-works__item:last-child{
+  margin-right: 10px;
+}
+
+.google-map-container {
+  height: 415px;
+  outline: 1px solid #333;
+}
+
+footer {
+  height: 218px;
+
+}
+
+.social-buttons {
+  display: block;
+  float: left;
+  width: 220px;
+  margin-right: 70px;
+}
+
+.footer-text {
+  width: 560px;
+  padding: 10px;
+  float: left;
+}
+
+
+/* Сетка для каталога */
+
+.main-header h1 {
+  height: 176px;
+}
+
+.left-block {
+  float: left;
+  width: 230px;
+  padding: 5px;
+  margin-right: 70px;
+}
+.right-block{
+  float: right;
+  width: 560px;
+}
+
+
+.sorting-block{
+  line-height: 18px;
+}
+.sorting-block .sort-type{
+  float: left;
+}
+
+.sorting-block .sort-arrow{
+  float: right;
+}
+
+.sort-type__item{
+  float: left;
+}
+
+.sort-arrow__item{
+  float: right;
+}
+
+.store-item-description {
+  display: none;
+}
+
+.store-items {
+  font-size: 0;
+}
+.store-item {
+  display: inline-block;
+}
+
+.store-item:nth-child(odd) {
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.store-page {
+  float: left;
+}
+
+.store-page a {
+  color: #000;
 }

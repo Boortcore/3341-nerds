@@ -8,8 +8,12 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <nav class="main-nav">
-          <div class="main-nav__logo"></div>
+        <div class="main-logo">
+            <a href="#">
+              <img src="img/nerds-logo1.jpg" width="138" height="55" alt="">
+            </a>
+        </div>
+        <nav class="main-nav clearfix">
           <ul class="main-nav-menu">
             <li class="main-nav-menu__item">
               <a href="#">Студия</a>
@@ -23,10 +27,11 @@
             <li class="main-nav-menu__item">
               <a href="#">Контакты</a>
             </li>
+            <li class="main-nav-menu__item shopping-cart">
+              <a href="#">Корзина</a>
+            </li>
           </ul>
-          <ul class="user-block">
-            <a href="#">Корзина</a>
-          </ul>
+
         </nav>
         <div class="block-title">
           <h1 class="main-header">Добро пожаловать в магазин готовых макетов!</h1>
@@ -34,7 +39,7 @@
       </div>
     </header>
     <main class="main-content">
-      <div class="container">
+      <div class="container clearfix">
         <aside class="left-block filter-block">
           <form action="">
             <div class="price">
@@ -52,7 +57,7 @@
                 </div>
                 </div>
               </div>
-            <div class="net">
+            <div class="maket-net">
               <legend>Сетка:</legend>
               <ul>
                 <li><input type="radio" name="net" id="1"><label for="1">Адаптивная</label></li>
@@ -60,7 +65,7 @@
                 <li><input type="radio" name="net" id=""><label for="">Резиновая</label></li>
               </ul>
             </div>
-            <div class="features">
+            <div class="maket-features">
               <legend>Особенности</legend>
               <ul>
                 <li><input type="checkbox" name="" id="2"><label for="2">Слайдер</label></li>
@@ -70,19 +75,20 @@
                 <li><input type="checkbox" name="" id=""><label for="">Корзина</label></li>
               </ul>
             </div>
+            <a href="#" class="btn">Показать</a>
           </form>
         </aside>
         <div class="right-block">
-          <section class="sorting-block">
-            <span>Сортировать:</span>
-              <ul>
-                <li><a href="#">по цене</a></li>
-                <li><a href="#">по типу</a></li>
-                <li><a href="#">по фунционалу</a></li>
+          <section class="sorting-block clearfix">
+              <ul class="sort-type">
+                <li class="sort-type__item"><span>Сортировать:</span></li>
+                <li class="sort-type__item"><a href="#">по цене</a></li>
+                <li class="sort-type__item"><a href="#">по типу</a></li>
+                <li class="sort-type__item"><a href="#">по фунционалу</a></li>
               </ul>
               <ul class="sort-arrow">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li class="sort-arrow__item"><a href="">+</a></li>
+                <li class="sort-arrow__item"><a href="">-</a></li>
               </ul>
           </section>
           <div class="store-items">
@@ -157,15 +163,15 @@
                 <a href="#" class="btn">14000 руб.</a>
               </div>
             </article>
-            <nav class="store-pages">
+          </div>
+          <nav class="store-pages clearfix">
               <ul>
-                <li><a href="#" class="btn current">1</a></li>
-                <li><a href="#" class="btn">2</a></li>
-                <li><a href="#" class="btn">3</a></li>
-                <li><a href="#" class="btn">Следующая</a></li>
+                <li class="store-page"><a href="#" class="btn current">1</a></li>
+                <li class="store-page"><a href="#" class="btn">2</a></li>
+                <li class="store-page"><a href="#" class="btn">3</a></li>
+                <li class="store-page"><a href="#" class="btn">Следующая</a></li>
               </ul>
             </nav>
-          </div>
         </div>
       </div>
     </main>
@@ -173,9 +179,9 @@
     <footer>
       <div class="container">
         <section class="social-buttons">
-          <a href="#" class="social-btn btn-vk"></a>
-          <a href="#" class="social-btn btn-fb"></a>
-          <a href="#" class="social-btn btn-inst"></a>
+          <a href="#" class="social-btn btn-vk">1</a>
+          <a href="#" class="social-btn btn-fb">1</a>
+          <a href="#" class="social-btn btn-inst">1</a>
         </section>
         <section class="footer-text">
           <b class="main-header">Давайте дружно, это выгодно!</b>
