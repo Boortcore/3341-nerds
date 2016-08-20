@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -40,7 +41,7 @@
     </header>
     <main class="main-content">
       <div class="container clearfix">
-        <aside class="left-block filter-block">
+        <aside class="left-block filter-block site-filters">
           <form action="">
             <div class="price">
               <legend>Стоимость:</legend>
@@ -57,12 +58,12 @@
                 </div>
                 </div>
               </div>
-            <div class="maket-net">
+            <div class="maket-net ">
               <legend>Сетка:</legend>
               <ul>
-                <li><input type="radio" name="net" id="1"><label for="1">Адаптивная</label></li>
-                <li><input type="radio" name="net" id=""><label for="">Фиксированная</label></li>
-                <li><input type="radio" name="net" id=""><label for="">Резиновая</label></li>
+                <li><input class="maket-net__item" type="radio" name="net" id="1"><label for="1">Адаптивная</label></li>
+                <li><input class="maket-net__item" type="radio" name="net" id=""><label for="">Фиксированная</label></li>
+                <li><input class="maket-net__item" type="radio" name="net" id=""><label for="">Резиновая</label></li>
               </ul>
             </div>
             <div class="maket-features">
@@ -146,7 +147,6 @@
                 <a href="#">
                   <h2 class="store-item-description__header">AVENUE</h2>
                 </a>
-
                 <p class="store-item-description__text">Макет для блога  о путешествиях</p>
                 <a href="#" class="btn">8000 руб.</a>
               </div>
@@ -177,16 +177,24 @@
     </main>
     <div class="google-map-container"></div>
     <footer>
-      <div class="container">
-        <section class="social-buttons">
-          <a href="#" class="social-btn btn-vk">1</a>
-          <a href="#" class="social-btn btn-fb">1</a>
-          <a href="#" class="social-btn btn-inst">1</a>
-        </section>
-        <section class="footer-text">
-          <b class="main-header">Давайте дружно, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
-        </section>
+      <div class="container clearfix">
+        <div class="inline-wrapper">
+          <section class="social-buttons">
+            <a href="#" class="social-btn btn-vk">
+              <i class="sprite sprite-icon-vk"></i>
+            </a>
+            <a href="#" class="social-btn btn-fb">
+              <i class="sprite sprite-icon-fb"></i>
+            </a>
+            <a href="#" class="social-btn btn-inst">
+              <i class="sprite sprite-icon-inst"></i>
+            </a>
+          </section>
+          <section class="footer-text">
+            <p class="block-header">Давайте дружить, это выгодно!</p>
+            <p class="block-description">Скидка 10% для друзей из социальных сетей</p>
+          </section>
+        </div>
       </div>
     </footer>
   </body>

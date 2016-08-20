@@ -5,6 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -17,7 +18,7 @@
         <nav class="main-nav clearfix">
           <ul class="main-nav-menu">
             <li class="main-nav-menu__item">
-              <a href="#">Студия</a>
+              <a class="action" href="#">Студия</a>
             </li>
             <li class="main-nav-menu__item">
               <a href="#">Клиенты</a>
@@ -36,26 +37,31 @@
         </nav>
         <div class="slider">
           <div class="slider-wrapper">
-            <div class="slider-item">
+            <div class="slider-item slider-item__1page">
               <div class="slider-item__description">
-                <h2>Долго, дорого, скрупулёзно</h2>
-                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-                <a class="btn" href="#">Узнать больше</a>
+                <h2 class="block-header">Долго, дорого, скрупулёзно</h2>
+                <p class="block-description">Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+                <a class="btn slider-item__btn btn__red" href="#">Узнать больше</a>
               </div>
             </div>
-            <div class="slider-item">
+            <div class="slider-item slider-item__2page">
               <div class="slider-item__description">
-                <h2>Любите ли вы математику, как любим её мы?</h2>
-                <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность всё просчитать</p>
-                <a class="btn" href="#">Узнать больше</a>
+                <h2 class="block-header">Любите ли вы математику, как любим её мы?</h2>
+                <p class="block-description">Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность всё просчитать</p>
+                <a class="btn slider-item__btn btn__red" href="#">Узнать больше</a>
               </div>
             </div>
-            <div class="slider-item">
+            <div class="slider-item slider-item__3page">
               <div class="slider-item__description">
-                <h2>Только наркотики, только хардкор!</h2>
-                <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-                <a class="btn" href="#">Узнать больше</a>
+                <h2 class="block-header">Только наркотики, только хардкор!</h2>
+                <p class="block-description">Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+                <a class="btn slider-item__btn btn__red" href="#">Узнать больше</a>
               </div>
+            </div>
+            <div class="switches-wrapper">
+              <input type="radio" data-count=0 name="slider" id="slider1" checked><label for="slider1"></label>
+              <input type="radio" data-count=1 name="slider" id="slider2"><label for="slider2"></label>
+              <input type="radio" data-count=2 name="slider" id="slider3"><label for="slider3"></label>
             </div>
           </div>
         </div>
@@ -67,25 +73,25 @@
           <img src="img/features-1.jpg" width="240" height="124" alt="">
           <h2 class="second-header">Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит наш сайт!</p>
-          <a href="#" class="btn features-item__btn">Заказать</a>
+          <a href="#" class="btn features-item__btn btn__red">Заказать</a>
         </article>
         <article class="features-item">
           <img src="img/features-2.jpg" width="240" height="124" alt="">
           <h2 class="second-header">Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a href="#" class="btn features-item__btn">Заказать</a>
+          <a href="#" class="btn features-item__btn btn__green">Заказать</a>
         </article>
         <article class="features-item">
           <img src="img/features-3.jpg" width="240" height="124" alt="">
           <h2 class="second-header">Презентации</h2>
           <p>Вы даже не подразумеваете насколько вы изумительны!</p>
-          <a href="#" class="btn features-item__btn">Заказать</a>
+          <a href="#" class="btn features-item__btn btn__yellow">Заказать</a>
         </article>
         </div>
         <div class="about-us clearfix">
           <div class="content-left">
             <p class="block-header">Мы - маленькая, но гордая дизайн-студия из краснодара</p>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы</p>
+            <p class="block-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы</p>
             <p class="second-header">Выполняем заказы на разработку</p>
             <ul class="about-us-list">
               <li class="about-us-list__item">Веб-сайтов любой сложностти</li>
@@ -94,7 +100,10 @@
             </ul>
           </div>
           <div class="content-right">
-            <img src="#" alt="" class="company-logo">
+            <div class="block-logo">
+              <img src="img/nerds-logo2.png" alt="" class="block-logo__img" width="187" height="75">
+              <p class="block-logo__description">since 2004</p>
+            </div>
             <p class="second-header">Как мы работаем</p>
             <ul class="about-us-list">
               <li class="about-us-list__item">С самоотдачей 146%</li>
@@ -105,29 +114,52 @@
         </div>
         <div class="our-works clearfix">
             <section class="our-works__item">
-              <img src="img/portfolio-1.jpg" width="198" height="37" alt="">
+              <a href="#">
+                <img src="img/portfolio-1.png" width="198" height="37" alt="">
+              </a>
             </section>
             <section class="our-works__item">
-              <img src="img/portfolio-2.jpg" width="199" height="68" alt="">
+              <a href="#">
+                <img src="img/portfolio-2.png" width="199" height="68" alt="">
+              </a>
             </section>
             <section class="our-works__item">
-              <img src="img/portfolio-3.jpg" width="209" height="86" alt="">
+              <a href="#">
+                <img src="img/portfolio-3.png" width="209" height="86" alt="">
+              </a>
             </section>
           </div>
     </main>
-    <div class="google-map-container"></div>
+    <div class="google-map-container">
+      <img src="img/google-map.jpg" width="1200" height="416">
+      <div class="call-to-action">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. + 7 (812) 275-75-75</p>
+        <a class="btn btn__red" href="#">Напишите нам</a>
+      </div>
+    </div>
     <footer>
       <div class="container clearfix">
-        <section class="social-buttons">
-          <a href="#" class="social-btn btn-vk">1</a>
-          <a href="#" class="social-btn btn-fb">2</a>
-          <a href="#" class="social-btn btn-inst">3</a>
-        </section>
-        <section class="footer-text">
-          <b class="block-header">Давайте дружно, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей</p>
-        </section>
+        <div class="inline-wrapper">
+          <section class="social-buttons">
+            <a href="#" class="social-btn btn-vk">
+              <i class="sprite sprite-icon-vk"></i>
+            </a>
+            <a href="#" class="social-btn btn-fb">
+              <i class="sprite sprite-icon-fb"></i>
+            </a>
+            <a href="#" class="social-btn btn-inst">
+              <i class="sprite sprite-icon-inst"></i>
+            </a>
+          </section>
+          <section class="footer-text">
+            <p class="block-header">Давайте дружить, это выгодно!</p>
+            <p class="block-description">Скидка 10% для друзей из социальных сетей</p>
+          </section>
+        </div>
       </div>
     </footer>
+  <script src="js/slider.js"></script>
   </body>
 </html>
