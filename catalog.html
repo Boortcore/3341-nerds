@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/normalize.css" rel="stylesheet" >
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -23,7 +23,7 @@
               <a href="#">Клиенты</a>
             </li>
             <li class="main-nav-menu__item">
-              <a href="#">Магазин</a>
+              <a class="action" href="#">Магазин</a>
             </li>
             <li class="main-nav-menu__item">
               <a href="#">Контакты</a>
@@ -32,58 +32,56 @@
               <a href="#">Корзина</a>
             </li>
           </ul>
-
         </nav>
         <div class="block-title">
-          <h1 class="main-header">Добро пожаловать в магазин готовых макетов!</h1>
+          <h1>Добро пожаловать в магазин готовых макетов!</h1>
         </div>
       </div>
     </header>
     <main class="main-content">
       <div class="container clearfix">
-        <aside class="left-block filter-block site-filters">
+        <aside class="left-block site-filters">
           <form action="">
-            <div class="price">
+            <div class="prise-slider">
               <legend>Стоимость:</legend>
-              <div class="prise-slider">
-                <div class="range-filter">
-                <div class="range-controls">
-                  <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
-                  <div class="toggle min-toggle"></div>
-                  <div class="toggle max-toggle"></div>
-                </div>
-                <div class="price-controls">
-                    от <input class="min-price" type="text" value="5 000">
-                    до <input class="max-price" type="text" value="15 000">
-                </div>
-                </div>
+              <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
               </div>
-            <div class="maket-net ">
+              <div class="price-controls">
+                  от <input class="min-price" type="text" value="5 000">
+                  до <input class="max-price" type="text" value="15 000">
+              </div>
+              </div>
+            </div>
+            <div class="maket-net">
               <legend>Сетка:</legend>
               <ul>
-                <li><input class="maket-net__item" type="radio" name="net" id="1"><label for="1">Адаптивная</label></li>
-                <li><input class="maket-net__item" type="radio" name="net" id=""><label for="">Фиксированная</label></li>
-                <li><input class="maket-net__item" type="radio" name="net" id=""><label for="">Резиновая</label></li>
+                <li><input class="maket-net__item" type="radio" name="" id="maket-net__item-1"><label for="maket-net__item-1">Адаптивная</label></li>
+                <li><input class="maket-net__item" type="radio" name="net" id="maket-net__item-2"><label for="maket-net__item-2">Фиксированная</label></li>
+                <li><input class="maket-net__item" type="radio" name="net" id="maket-net__item-3"><label for="maket-net__item-3">Резиновая</label></li>
               </ul>
             </div>
             <div class="maket-features">
               <legend>Особенности</legend>
               <ul>
-                <li><input type="checkbox" name="" id="2"><label for="2">Слайдер</label></li>
-                <li><input type="checkbox" name="" id=""><label for="">Блок преимуществ</label></li>
-                <li><input type="checkbox" name="" id=""><label for="">Новости</label></li>
-                <li><input type="checkbox" name="" id=""><label for="">Галерея</label></li>
-                <li><input type="checkbox" name="" id=""><label for="">Корзина</label></li>
+                <li><input class="maket-features__item" type="checkbox" name="" id="maket-features__item-1"><label for="maket-features__item-1">Слайдер</label></li>
+                <li><input class="maket-features__item" type="checkbox" name="" id="maket-features__item-2"><label for="maket-features__item-2">Блок преимуществ</label></li>
+                <li><input class="maket-features__item" type="checkbox" name="" id="maket-features__item-3"><label for="maket-features__item-3">Новости</label></li>
+                <li><input class="maket-features__item" type="checkbox" name="" id="maket-features__item-4"><label for="maket-features__item-4">Галерея</label></li>
+                <li><input class="maket-features__item" type="checkbox" name="" id="maket-features__item-5"><label for="maket-features__item-5">Корзина</label></li>
               </ul>
             </div>
-            <a href="#" class="btn">Показать</a>
+            <a href="#" class="btn btn--middle btn--gray">Показать</a>
           </form>
         </aside>
         <div class="right-block">
           <section class="sorting-block clearfix">
               <ul class="sort-type">
                 <li class="sort-type__item"><span>Сортировать:</span></li>
-                <li class="sort-type__item"><a href="#">по цене</a></li>
+                <li class="sort-type__item"><a class="action" href="#">по цене</a></li>
                 <li class="sort-type__item"><a href="#">по типу</a></li>
                 <li class="sort-type__item"><a href="#">по фунционалу</a></li>
               </ul>
@@ -100,9 +98,8 @@
                 <a href="#">
                   <h2 class="store-item-description__header">aviator</h2>
                 </a>
-
                 <p class="store-item-description__text">Одностраничный макет с авторским дизайном</p>
-                <a href="#" class="btn">8000 руб.</a>
+                <a href="#" class="btn btn--stretch btn--red">8000 руб.</a>
               </div>
             </article>
             <article class="store-item">
@@ -114,7 +111,7 @@
                 </a>
 
                 <p class="store-item-description__text">Интернет-магазин с личным кабинетом</p>
-                <a href="#" class="btn">10000 руб.</a>
+                <a href="#" class="btn btn--stretch btn--red">10000 руб.</a>
               </div>
             </article>
             <article class="store-item">
@@ -126,7 +123,7 @@
                 </a>
 
                 <p class="store-item-description__text">Отличный макет для личного блога</p>
-                <a href="#" class="btn">5000 руб.</a>
+                <a href="#" class="btn btn--stretch btn--red">5000 руб.</a>
               </div>
             </article>
             <article class="store-item">
@@ -137,7 +134,7 @@
                   <h2 class="store-item-description__header">Modern Organic THAI</h2>
                 </a>
                 <p class="store-item-description__text">Сайт для ресторана быстрого питания</p>
-                <a href="#" class="btn">12000 руб.</a>
+                <a href="#" class="btn btn--stretch btn--red">12000 руб.</a>
               </div>
             </article>
             <article class="store-item">
@@ -148,7 +145,7 @@
                   <h2 class="store-item-description__header">AVENUE</h2>
                 </a>
                 <p class="store-item-description__text">Макет для блога  о путешествиях</p>
-                <a href="#" class="btn">8000 руб.</a>
+                <a href="#" class="btn btn--stretch btn--red">8000 руб.</a>
               </div>
             </article>
             <article class="store-item">
@@ -158,20 +155,19 @@
                 <a href="#">
                   <h2 class="store-item-description__header">DOVETAIL</h2>
                 </a>
-
                 <p class="store-item-description__text">Интернет-магазин с галереей товаров</p>
-                <a href="#" class="btn">14000 руб.</a>
+                <a href="#" class="btn btn--stretch btn--red">14000 руб.</a>
               </div>
             </article>
           </div>
-          <nav class="store-pages clearfix">
+          <div class="store-pages clearfix">
               <ul>
-                <li class="store-page"><a href="#" class="btn current">1</a></li>
-                <li class="store-page"><a href="#" class="btn">2</a></li>
-                <li class="store-page"><a href="#" class="btn">3</a></li>
-                <li class="store-page"><a href="#" class="btn">Следующая</a></li>
+                <li class="store-pages__item"><a href="#" class="btn btn--small btn--gray action">1</a></li>
+                <li class="store-pages__item"><a href="#" class="btn btn--small btn--gray">2</a></li>
+                <li class="store-pages__item"><a href="#" class="btn btn--small btn--gray">3</a></li>
+                <li class="store-pages__item"><a href="#" class="btn btn--middle btn--gray">Следующая</a></li>
               </ul>
-            </nav>
+          </div>
         </div>
       </div>
     </main>
