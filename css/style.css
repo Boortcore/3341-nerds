@@ -252,7 +252,6 @@ input[name="slider"]:checked + label {
   height: 380px;
 }
 
-
 .features-item {
   float: left;
   width: 240px;
@@ -539,6 +538,7 @@ input[name="slider"]:checked + label {
 
 .maket-net__item + label{
   position: relative;
+  color: #283136;
 }
 
 .maket-net__item:checked + label::before,
@@ -555,6 +555,15 @@ input[name="slider"]:checked + label {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -5px -158px;
+  opacity: 0.8;
+}
+
+.maket-net__item + label:hover{
+  color: #000;
+}
+
+.maket-net__item + label:hover::before{
+  opacity: 1;
 }
 
 .maket-net__item:checked + label::before{
@@ -575,6 +584,7 @@ input[name="slider"]:checked + label {
 .maket-features__item + label::before{
   top: -3px;
   left: -35px;
+  color: #283136;
 }
 
 .maket-features__item + label::before{
@@ -585,6 +595,15 @@ input[name="slider"]:checked + label {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -5px -30px;
+  opacity: 0.8;
+}
+
+.maket-features__item + label:hover{
+  color: #000;
+}
+
+.maket-features__item + label:hover::before{
+  opacity: 1;
 }
 
 .maket-features__item:checked + label::before{
