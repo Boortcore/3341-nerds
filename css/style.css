@@ -197,7 +197,6 @@ h2{
 
 .slider-wrapper {
   position: relative;
-
 }
 
 .slider-item {
@@ -325,7 +324,7 @@ input[name="slider"]:checked + label {
   width: 25px;
   height: 2px;
   background-color: #fb565a;
-  left: 0px;
+  left: 0;
   top: 22px;
 }
 
@@ -632,7 +631,6 @@ input[name="slider"]:checked + label {
 
 .maket-net__item + label{
   position: relative;
-  color: #283136;
 }
 
 .maket-net__item:checked + label::before,
@@ -729,24 +727,13 @@ input[name="slider"]:checked + label {
 
 .sorting-block .sort-type{
   float: left;
-}
-
-.sorting-block .sort-arrow{
-  float: right;
+  list-style-type: none;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .sort-type__item{
   float: left;
-}
-
-.sort-arrow__item{
-  float: right;
-}
-
-.sort-type {
-  list-style-type: none;
-  padding: 0;
-  text-transform: uppercase;
 }
 
 .sort-type__item:first-child{
@@ -766,6 +753,7 @@ input[name="slider"]:checked + label {
   border-bottom: 1px dotted #00ca74;
   color: #b2b2b2;
 }
+
 .sort-type__item a:hover{
   color: #000;
 }
@@ -773,10 +761,40 @@ input[name="slider"]:checked + label {
 .sort-type__item a:active{
   border-bottom: 1px dotted transparent;
 }
+
 .sort-type__item .action{
   color: #000;
   border-bottom: 1px dotted transparent;
 }
+
+.sorting-block .sort-arrow{
+  float: right;
+  list-style: none;
+  padding-top: 5px;
+}
+
+.sort-arrow__item{
+  float: right;
+  margin-left: 7px;
+}
+
+.sort-arrow__item a{
+  width: 12px;
+  height: 10px;
+  display: block;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.sort-arrow__item .arrow-down{
+  background-image: url("../img/arrow-down.png");
+}
+
+.sort-arrow__item .arrow-up{
+  background-image: url("../img/arrow-up.png");
+}
+
 
 /* артикулы каталога */
 

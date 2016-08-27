@@ -5,6 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet" >
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -59,7 +60,7 @@
             <div class="maket-net">
               <legend>Сетка:</legend>
               <ul>
-                <li><input class="maket-net__item" type="radio" name="" id="maket-net__item-1"><label for="maket-net__item-1">Адаптивная</label></li>
+                <li><input class="maket-net__item" type="radio" name="net" id="maket-net__item-1"><label for="maket-net__item-1">Адаптивная</label></li>
                 <li><input class="maket-net__item" type="radio" name="net" id="maket-net__item-2"><label for="maket-net__item-2">Фиксированная</label></li>
                 <li><input class="maket-net__item" type="radio" name="net" id="maket-net__item-3"><label for="maket-net__item-3">Резиновая</label></li>
               </ul>
@@ -74,21 +75,21 @@
                 <li><input class="maket-features__item" type="checkbox" name="" id="maket-features__item-5"><label for="maket-features__item-5">Корзина</label></li>
               </ul>
             </div>
-            <input class="btn btn--middle btn--gray" value="Показать">
+            <input type="button" class="btn btn--middle btn--gray" value="Показать">
           </form>
         </aside>
         <div class="right-block">
           <section class="sorting-block clearfix">
-              <ul class="sort-type">
-                <li class="sort-type__item"><span>Сортировать:</span></li>
-                <li class="sort-type__item"><a class="action" href="#">по цене</a></li>
-                <li class="sort-type__item"><a href="#">по типу</a></li>
-                <li class="sort-type__item"><a href="#">по фунционалу</a></li>
-              </ul>
-              <ul class="sort-arrow">
-                <li class="sort-arrow__item"><a href="">+</a></li>
-                <li class="sort-arrow__item"><a href="">-</a></li>
-              </ul>
+            <ul class="sort-type">
+              <li class="sort-type__item"><span>Сортировать:</span></li>
+              <li class="sort-type__item"><a class="action" href="#">по цене</a></li>
+              <li class="sort-type__item"><a href="#">по типу</a></li>
+              <li class="sort-type__item"><a href="#">по фунционалу</a></li>
+            </ul>
+            <ul class="sort-arrow">
+              <li class="sort-arrow__item"><a class="arrow-up" href="#"></a></li>
+              <li class="sort-arrow__item"><a class="arrow-down" href="#"></a></li>
+            </ul>
           </section>
           <div class="store-items">
             <article class="store-item">
