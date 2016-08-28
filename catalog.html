@@ -11,7 +11,7 @@
     <header class="main-header">
       <div class="container">
         <div class="main-logo">
-            <a href="#">
+            <a href="index.html">
               <img src="img/nerds-logo1.jpg" width="138" height="55" alt="">
             </a>
         </div>
@@ -42,9 +42,10 @@
     <main class="main-content">
       <div class="container clearfix">
         <aside class="left-block site-filters">
-          <form action="">
+          <form action="my-action">
+            <fieldset>
+            <legend>Стоимость:</legend>
             <div class="prise-slider">
-              <legend>Стоимость:</legend>
               <div class="range-filter">
               <div class="range-controls">
                 <div class="scale"><div style="margin-left:50px;width:100px;" class="bar"></div></div>
@@ -57,25 +58,30 @@
               </div>
               </div>
             </div>
+            </fieldset>
+            <fieldset>
+            <legend>Сетка:</legend>
             <div class="maket-net">
-              <legend>Сетка:</legend>
               <ul>
                 <li><input class="maket-net__item" type="radio" name="net" id="maket-net__item-1"><label for="maket-net__item-1">Адаптивная</label></li>
                 <li><input class="maket-net__item" type="radio" name="net" id="maket-net__item-2"><label for="maket-net__item-2">Фиксированная</label></li>
                 <li><input class="maket-net__item" type="radio" name="net" id="maket-net__item-3"><label for="maket-net__item-3">Резиновая</label></li>
               </ul>
             </div>
+            </fieldset>
+            <fieldset>
+            <legend>Особенности</legend>
             <div class="maket-features">
-              <legend>Особенности</legend>
               <ul>
-                <li><input class="maket-features__item" type="checkbox" name="" id="maket-features__item-1"><label for="maket-features__item-1">Слайдер</label></li>
-                <li><input class="maket-features__item" type="checkbox" name="" id="maket-features__item-2"><label for="maket-features__item-2">Блок преимуществ</label></li>
-                <li><input class="maket-features__item" type="checkbox" name="" id="maket-features__item-3"><label for="maket-features__item-3">Новости</label></li>
-                <li><input class="maket-features__item" type="checkbox" name="" id="maket-features__item-4"><label for="maket-features__item-4">Галерея</label></li>
-                <li><input class="maket-features__item" type="checkbox" name="" id="maket-features__item-5"><label for="maket-features__item-5">Корзина</label></li>
+                <li><input class="maket-features__item" type="checkbox" name="is-slider" id="maket-features__item-1"><label for="maket-features__item-1">Слайдер</label></li>
+                <li><input class="maket-features__item" type="checkbox" name="block" id="maket-features__item-2"><label for="maket-features__item-2">Блок преимуществ</label></li>
+                <li><input class="maket-features__item" type="checkbox" name="news" id="maket-features__item-3"><label for="maket-features__item-3">Новости</label></li>
+                <li><input class="maket-features__item" type="checkbox" name="galery" id="maket-features__item-4"><label for="maket-features__item-4">Галерея</label></li>
+                <li><input class="maket-features__item" type="checkbox" name="cart" id="maket-features__item-5"><label for="maket-features__item-5">Корзина</label></li>
               </ul>
             </div>
             <input type="button" class="btn btn--middle btn--gray" value="Показать">
+            </fieldset>
           </form>
         </aside>
         <div class="right-block">
@@ -172,7 +178,33 @@
         </div>
       </div>
     </main>
-    <div class="google-map-container"></div>
+    <div class="google-map-container">
+      <img src="img/google-map.jpg" width="1200" height="416" alt="">
+      <div class="call-to-action">
+        <h2>NЁRDS DESIGN STUDIO</h2>
+        <p>191186, Санкт-Петербург,  ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. + 7 (812) 275-75-75</p>
+        <a class="btn btn--stretch  btn--red" href="#">Напишите нам</a>
+      </div>
+      <div class="popup">
+        <div class="popup__contacts">
+          <div class="popup__name">
+            <label for="input-name">Ваше имя:</label><br>
+            <input type="text" placeholder="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА" id="input-name">
+          </div>
+          <div class="popup__email">
+            <label for="input-name">Ваш e-mail:</label><br>
+            <input type="text" placeholder="ДЛЯ ОТПРАВКИ ОТВЕТА" id="input-email">
+          </div>
+        </div>
+        <div class="popup_content">
+          <label for="text">Текст письма:</label><br>
+          <textarea name="text" id="text" cols="20" rows="3">В свободной форме</textarea>
+        </div>
+        <input type="submit" class="btn btn--red btn--stretch">
+        <button type="button" class="popup__btn-close"></button>
+      </div>
+    </div>
     <footer>
       <div class="container clearfix">
         <div class="inline-wrapper">
