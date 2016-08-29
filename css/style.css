@@ -423,7 +423,11 @@ input[name="slider"]:checked + label {
 }
 
 .popup {
+  display: none;
   position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
   color: #000;
   box-sizing: border-box;
   width: 630px;
@@ -431,9 +435,6 @@ input[name="slider"]:checked + label {
   padding: 50px 90px;
   background-color: #fff;
   box-shadow: 0 0 20px 3px rgba(0,0,0,.5);
-  top: -40px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .popup__contacts {
@@ -453,6 +454,8 @@ input[name="slider"]:checked + label {
   font-size: 12px;
   padding: 5px 10px;
   border-radius: 5px;
+  color: black;
+  text-transform: uppercase;
 }
 
 .popup__name {
@@ -478,6 +481,7 @@ input[name="slider"]:checked + label {
   height: 110px;
   border-radius: 5px;
   border: 2px solid #d7dcde;
+  text-transform: uppercase;
 }
 
 .popup__contacts input:focus, .popup_content textarea:focus {
@@ -495,6 +499,7 @@ input[name="slider"]:checked + label {
   background-color: #fb565a;
   border-radius: 50%;
 }
+
 .popup__btn-close::after, .popup__btn-close::before {
   position: absolute;
   content: " ";
@@ -513,6 +518,18 @@ input[name="slider"]:checked + label {
   transform: rotate(45deg);
 }
 
+.block-show{
+  display: block;
+  animation-name: show;
+  animation-duration: 1s;
+}
+
+@keyframes show {
+  0%{ transform: translate(-50%,-2000px); }
+  70%{ transform: translate(-50%,30px); }
+  90%{ transform: translate(-50%,-10px); }
+  100%{ transform: translate(-50%,0); }
+}
 /*footer*/
 
 .inline-wrapper {
