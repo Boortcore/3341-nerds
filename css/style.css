@@ -236,6 +236,10 @@
   border: none;
 }
 
+.btn:focus{
+  outline: none;
+}
+
 .btn--stretch {
   width: 100%;
   text-align: center;
@@ -394,13 +398,16 @@ h2 {
 .main-nav-menu__item a:hover {
   color: #fb565a;
 }
+
 .main-nav-menu__item a:active {
   color: #000;
   opacity: .5;
 }
+
 .main-nav-menu__item .action {
   border-bottom: 2px solid #fb565a;
 }
+
 .shopping-cart {
   padding-left: 50px;
 }
@@ -416,7 +423,16 @@ h2 {
   background-repeat: no-repeat;
   background-position: -5px -5px;
 }
+
+.shopping-cart a:hover::before{
+  background-position: -5px -293px;
+}
+
+.shopping-cart a:active::before{
+  background-position: -5px -5px;
+}
 /*Стилизация слайдера*/
+
 
 .slider-wrapper {
   position: relative;
@@ -630,10 +646,12 @@ input[name="slider"]:checked + label {
 .google-map-container {
   position: relative;
   height: 419px;
+  text-align: center;
 }
 
-.google-map-container img {
+.google-map-container iframe {
   position: absolute;
+  display: none;
 }
 
 .call-to-action {
@@ -645,6 +663,7 @@ input[name="slider"]:checked + label {
   height: 245px;
   background-color: #fff;
   padding: 20px;
+  text-align: left;
 }
 
 .call-to-action p {
@@ -658,6 +677,7 @@ input[name="slider"]:checked + label {
   left: 50%;
   transform: translateX(-50%);
   color: #000;
+  text-align: left;
   box-sizing: border-box;
   width: 630px;
   height: 415px;
@@ -681,10 +701,20 @@ input[name="slider"]:checked + label {
   width: 100%;
   border: 2px solid #d7dcde;
   font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
   padding: 5px 10px;
   border-radius: 5px;
   color: black;
   text-transform: uppercase;
+}
+
+.popup__contacts input:hover{
+  border: 2px solid #a2a9ac;
+}
+
+.popup__contacts input:focus{
+  border: 2px solid #56bffb;
 }
 
 .popup__name {
@@ -711,6 +741,16 @@ input[name="slider"]:checked + label {
   border-radius: 5px;
   border: 2px solid #d7dcde;
   text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.popup_content textarea:hover{
+  border: 2px solid #a2a9ac;
+}
+
+.popup_content textarea:focus{
+  border: 2px solid #56bffb;
 }
 
 .popup__contacts input:focus, .popup_content textarea:focus {
@@ -764,8 +804,6 @@ input[name="slider"]:checked + label {
 .inline-wrapper {
   height: 218px;
 }
-
-
 
 .inline-wrapper::before {
   content: " ";
@@ -828,7 +866,7 @@ input[name="slider"]:checked + label {
 
 .main-header h1 {
   font-size: 40px;
-  line-height: 48px;;
+  line-height: 48px;
   text-align: center;
   text-transform: uppercase;
   margin-top: 13px;
@@ -859,6 +897,11 @@ input[name="slider"]:checked + label {
 
 .site-filters input[type="checkbox"], .site-filters input[type="radio"] {
   display: none;
+}
+
+.site-filters input+label,
+.site-filters input+label::before{
+  cursor: pointer;
 }
 
 .prise-slider {
@@ -911,6 +954,13 @@ input[name="slider"]:checked + label {
   background-position: -5px -193px;
 }
 
+.maket-net__item:disabled + label::before,
+.maket-net__item:disabled + label,
+.maket-net__item:disabled:checked + label,
+.maket-net__item:disabled:checked + label::before{
+  opacity: .5;
+}
+
 .maket-features__item + label {
   position: relative;
 }
@@ -948,6 +998,12 @@ input[name="slider"]:checked + label {
   background-image: url(../img/spritesheet.png);
   background-repeat: no-repeat;
   background-position: -5px -63px;
+}
+.maket-features__item:disabled + label::before,
+.maket-features__item:disabled + label,
+.maket-features__item:disabled:checked + label,
+.maket-features__item:disabled:checked + label::before{
+  opacity: .5;
 }
 
 .left-block {
@@ -991,6 +1047,7 @@ input[name="slider"]:checked + label {
 .sort-type__item a {
   text-decoration: none;
   font-size: 12px;
+  font-weight: 500;
   line-height: 18px;
   border-bottom: 1px dotted #00ca74;
   color: #b2b2b2;
@@ -998,6 +1055,7 @@ input[name="slider"]:checked + label {
 
 .sort-type__item a:hover {
   color: #000;
+  border-bottom: 1px solid #00ca74;
 }
 
 .sort-type__item a:active {
@@ -1026,19 +1084,34 @@ input[name="slider"]:checked + label {
   display: block;
   text-decoration: none;
   background-repeat: no-repeat;
-
 }
 
-.sort-arrow__item .arrow-down {
+.arrow-down {
   background-image: url("../img/spritesheet.png");
+  background-position: -5px -338px;
+}
+
+
+.arrow-down.active {
   background-position: -5px -253px;
 }
 
-.sort-arrow__item .arrow-up {
+.arrow-down:active {
+  background-position: -5px -318px;
+}
+
+.arrow-up {
   background-image: url("../img/spritesheet.png");
   background-position: -5px -273px;
 }
 
+.arrow-up.active {
+  background-position: -5px -378px;
+}
+
+.arrow-up:active {
+  background-position: -5px -358px;
+}
 
 /* артикулы каталога */
 
@@ -1252,7 +1325,6 @@ input[name="slider"]:checked + label {
   border: none;
   background: #f1f1f1;
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-style: normal;
   text-align: center;

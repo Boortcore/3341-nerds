@@ -1,4 +1,12 @@
 (function(){
+    var iframe = document.querySelector(".google-map-container iframe");
+    var img = document.querySelector(".google-map-container img");
+    console.log(img);
+    img.style.display = "none";
+    iframe.style.display = "block";
+})();
+
+(function(){
   if(document.querySelector(".slider")){
     var sliderItems = document.querySelectorAll(".slider-item");
     var buttons = document.querySelectorAll("input[name='slider']");
