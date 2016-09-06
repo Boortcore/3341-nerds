@@ -331,7 +331,7 @@ body {
   line-height: 22px;
   font-weight: 500;
   color: #9b9fa1;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial,  sans-serif;
 }
 
 .clearfix::after {
