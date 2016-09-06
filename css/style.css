@@ -361,7 +361,7 @@ h2 {
 }
 
 .main-header {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   background-color: #eee;
 }
 
@@ -461,12 +461,13 @@ h2 {
 .slider-item__description {
   position: absolute;
   width: 475px;
+  padding-top: 5px;
 }
 
 .switches-wrapper {
   position: absolute;
-  left: 45%;
-  bottom: 70px;
+  left: 46%;
+  bottom: 85px;
 }
 
 input[name="slider"] {
@@ -481,7 +482,7 @@ input[name="slider"] + label {
   width: 4px;
   height: 4px;
   background-color: #fff;
-  margin: 5px;
+  margin: 3px;
 }
 
 input[name="slider"]:checked + label {
@@ -534,13 +535,17 @@ input[name="slider"]:checked + label {
   color: #283136;
   font-size: 16px;
   line-height: 22px;
-  margin-bottom: 43px;
+  margin-bottom: 30px;
 }
 
 .about-us .second-header {
   color: #283136;
   text-transform: uppercase;
   margin-bottom: 0;
+}
+
+.about-us .block-description{
+  margin-bottom: 43px;
 }
 
 .about-us-list {
@@ -863,6 +868,9 @@ input[name="slider"]:checked + label {
 }
 
 /* Сетка для каталога */
+.page-catalog .main-header{
+  margin-bottom: 70px;
+}
 
 .main-header h1 {
   font-size: 40px;
@@ -875,6 +883,7 @@ input[name="slider"]:checked + label {
 
 .site-filters fieldset{
   border: none;
+  padding: 0;
 }
 
 .site-filters legend {
@@ -1038,6 +1047,7 @@ input[name="slider"]:checked + label {
   color: #000;
   font-size: 12px;
   line-height: 18px;
+  padding-right: 15px;
 }
 
 .sort-type__item:not(:first-child) {
@@ -1122,7 +1132,7 @@ input[name="slider"]:checked + label {
 .store-item {
   position: relative;
   display: inline-block;
-  margin-bottom: 80px;
+  margin-bottom: 68px;
   cursor: pointer;
   text-align: center;
 }
@@ -1195,7 +1205,8 @@ input[name="slider"]:checked + label {
 }
 
 .store-pages{
-	margin-bottom: 80px;
+  margin-top: -16px;
+  margin-bottom: 80px;
 }
 
 .store-pages ul {
